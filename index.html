@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maze Generator :)</title>
+        <script src="maze.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <style>
+            .canvas-container {
+                margin-top: 40px;
+                width:100%;
+                display: flex;
+                justify-content: center;
+            }
+            .inputs {
+                margin-top: 15px;
+                width:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="canvas-container">
+            <canvas id="canvas" width="600" height="600" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>
+        
+        <div class="inputs">
+            <p style="margin:0%;">Enter Width: </p>
+            <input id="width" value="10" style="width: 35px;margin-left:6px;margin-right:15px;">
+            <p style="margin:0%;">Enter Height: </p>
+            <input id="length" value="10" style="width:35px;margin-left:6px;">
+            <button type="button" class="btn btn-primary btn-sm" id="generate" style="margin-left: 15px;">Generate Maze</button>
+            <button type="button" class="btn btn-primary btn-sm" id="solve" style="margin-left: 15px;">Solve</button>
+        </div>
+        
+        
+    </body>
+</html>
